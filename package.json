@@ -2,9 +2,11 @@
   "name": "get_ip",
   "version": "1.0.0",
   "description": "Is simple way of getting your network address without having to struggle checking your settings, just run the command and voila!!!",
-  "main": "index.js",
+  "main": "./build/index.js",
   "scripts": {
-    "start": "tsc && node build/index.js"
+    "start": "tsc && node ./build/index.js",
+    "link": "./build && tsc && npm link get_ip"
+
   },
   "repository": {
     "type": "git",

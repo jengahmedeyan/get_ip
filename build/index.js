@@ -14,6 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.getIp = void 0;
 var os_1 = __importDefault(require("os"));
 var dotenv_1 = __importDefault(require("dotenv"));
 var fs_1 = __importDefault(require("fs"));
@@ -69,3 +70,7 @@ if (fs_1.default.existsSync(userConfigFilePath)) {
     }
 }
 fetchIPAddress(userConfig);
+function getIp() {
+    fetchIPAddress(userConfig);
+}
+exports.getIp = getIp;

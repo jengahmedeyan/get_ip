@@ -1,13 +1,9 @@
-
-
 import os from 'os';
 import dotenv from 'dotenv';
 import fs from 'fs';
+import {Config} from "./types";
 
-interface Config {
-	envFilePath?: string;
-	envVariableName?: string;
-}
+
 
 function fetchIPAddress(config: Config): void {
 	const interfaces = os.networkInterfaces();

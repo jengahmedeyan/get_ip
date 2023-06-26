@@ -32,13 +32,6 @@ function fetchIPAddress(config) {
                 var envData_1 = fs_1.default.existsSync(config.envFilePath)
                     ? dotenv_1.default.parse(fs_1.default.readFileSync(config.envFilePath))
                     : {};
-                // envData[config.envVariableName] = network.address;
-                //
-                // let newEnvContent = '';
-                // for (const key in envData) {
-                // 	newEnvContent += `${key}=${envData[key]}\n`;
-                // }
-                // fs.writeFileSync(config.envFilePath, newEnvContent);
                 if (envData_1[config.envVariableName] !== network.address) {
                     envData_1[config.envVariableName] = network.address;
                     var newEnvContent_1 = '';

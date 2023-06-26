@@ -65,3 +65,7 @@ if (fs.existsSync(userConfigFilePath)) {
 }
 
 fetchIPAddress(userConfig);
+
+export function getIp(): void {
+	fetchIPAddress(userConfig);
+}

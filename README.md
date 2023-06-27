@@ -7,13 +7,13 @@ get_ip is a utility that fetches the IP address of your connected device and sto
 To install the package, use npm:
 
 ```shell
-npm install get_ip
+npm install @eyanjeng/get_ip
 ```
 
 ## Usage
 
 ```shell
-import { getIp } from 'get_ip';
+import { getIp } from '@eyanjeng/get_ip';
 
 getIp();
 ```

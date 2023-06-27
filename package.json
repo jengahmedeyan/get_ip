@@ -1,17 +1,17 @@
 {
   "name": "@eyanjeng/get_ip",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Is simple way of getting your network address without having to struggle checking your settings, just run the command and voila!!!",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
    "files": [
-    "./dist",
+    "dist",
     "package.json",
     "README.md"
   ],
   "scripts": {
-    "start": "rm -rvf tsc && node ./dist/index.js",
-    "link": "rm -rvf ./dist && tsc && npm link @eyanjeng/get_ip"
+    "start": "rm -rvf tsc && node dist/index.js",
+    "link": "rm -rvf dist && tsc && npm link @eyanjeng/get_ip"
   },
   "repository": {
     "type": "git",

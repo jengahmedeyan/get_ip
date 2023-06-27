@@ -3,8 +3,6 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 import {Config} from "./types";
 
-
-
 function fetchIPAddress(config: Config): void {
 	const interfaces = os.networkInterfaces();
 	for (const interfaceName in interfaces) {
@@ -62,6 +60,13 @@ if (fs.existsSync(userConfigFilePath)) {
 
 fetchIPAddress(userConfig);
 
-export function getIp(): void {
-	fetchIPAddress(userConfig);
+export function getIp(): string | undefined {
+	if (!userConfig.envFilePath || !userConfig.envVariableName) {
+		console.error('Invalid user config');
+		return undefined;
+	}
+
+	const envData = dotenv.parse(fs.readFileSync(userConfig.envFilePath));
+	return envData[userConfig.envVariableName];
 }
+

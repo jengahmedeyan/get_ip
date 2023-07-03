@@ -1,6 +1,6 @@
 {
   "name": "@eyanjeng/get_ip",
-  "version": "1.0.5",
+  "version": "1.0.9",
   "description": "Is simple way of getting your network address without having to struggle checking your settings, just run the command and voila!!!",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

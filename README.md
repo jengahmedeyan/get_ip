@@ -1,13 +1,15 @@
 # Get IP
 
 The `@eyanjeng/get_ip` npm package is a lightweight utility that fetches the IP address of the current machine and updates it in an environment variable file. It allows you to easily retrieve the IP address and ensures that it is always up to date. The package scans the network interfaces, retrieves the first non-internal IPv4 address, and updates the specified environment variable in the provided file. It also maintains other existing key-value pairs in the environment variable file, preserving their values. With `@eyanjeng/get_ip`, you can conveniently manage and utilize the IP address in your Node.js application's configuration.
-## Installation
 
 #### Key Features:
 
 - Fetches the IP address of the current machine.
 - Updates the IP address in an environment variable file.
 - Maintains other key-value pairs in the environment variable file.
+
+
+## Installation
 
 To install the package, use npm:
 
